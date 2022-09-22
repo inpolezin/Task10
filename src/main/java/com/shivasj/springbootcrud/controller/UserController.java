@@ -1,7 +1,7 @@
 package com.shivasj.springbootcrud.controller;
 
 import com.shivasj.springbootcrud.model.User;
-import com.shivasj.springbootcrud.service.UserService;
+import com.shivasj.springbootcrud.service.UserServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,41 +12,41 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class UserController {
 
-    private final UserService userService;
+    private final UserServiceImpl userServiceImpl;
 
     @GetMapping
-    public String getUsers(Model model) {
-        model.addAttribute("users", userService.findAllUsers());
-        return "users/users";
+    public String getAllUsersPage(Model model) {
+        model.addAttribute("users", userServiceImpl.findAllUsers());
+        return "users/all";
     }
 
-    @GetMapping("/add")
-    public String getAddUserPage(Model model) {
+    @GetMapping("/new")
+    public String getCreateUserPage(Model model) {
         model.addAttribute("user", new User());
-        return "users/add";
+        return "users/new";
     }
 
     @PostMapping()
     public String createUser(@ModelAttribute("user") User user) {
-        userService.saveUser(user);
+        userServiceImpl.saveUser(user);
         return "redirect:/users";
     }
 
     @DeleteMapping("/{id}")
-    public String deleteUser(@PathVariable("id") int id) {
-        userService.deleteByIdUsers(id);
+    public String deleteUserById(@PathVariable("id") Long id) {
+        userServiceImpl.deleteUserById(id);
         return "redirect:/users";
     }
 
     @GetMapping("/edit/{id}")
-    public String getUserForEdit(Model model, @PathVariable("id") int id) {
-        model.addAttribute("user", userService.findByIdUsers(id));
+    public String getEditUserPage(Model model, @PathVariable("id") Long id) {
+        model.addAttribute("user", userServiceImpl.findUserById(id));
         return "users/edit";
     }
 
     @PatchMapping("/{id}")
-    public String updateUser(@ModelAttribute("user") User user, @PathVariable("id") int id) {
-        userService.updateUser(id, user);
+    public String updateUser(@ModelAttribute("user") User user) {
+        userServiceImpl.updateUser(user);
         return "redirect:/users";
     }
 }
