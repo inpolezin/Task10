@@ -10,11 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e58c214-4a70-4d40-bc0e-a6b05f36da3c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shivasj/springbootcrud/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shivasj/springbootcrud/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shivasj/springbootcrud/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shivasj/springbootcrud/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shivasj/springbootcrud/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shivasj/springbootcrud/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shivasj/springbootcrud/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shivasj/springbootcrud/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shivasj/springbootcrud/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/polezin/spring/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shivasj/springbootcrud/SpringbootcrudApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polezin/spring/SpringApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shivasj/springbootcrud/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polezin/spring/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shivasj/springbootcrud/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polezin/spring/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shivasj/springbootcrud/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polezin/spring/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shivasj/springbootcrud/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shivasj/springbootcrud/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/polezin/spring/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +48,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2Ezf40QA1MYCaI6U12kDhN0xwJQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -52,16 +64,19 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/43523/OneDrive/Desktop/GitHub/Task10",
-    "project.structure.last.edited": "Facets",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "4819e58842ff87445d3ce8ede7473612"
+    "spring.configuration.checksum": "b15ba62a0c17fd4f7af71b162509ae0e"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -69,7 +84,14 @@
     ]
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.SpringApplication">
+    <configuration name="SpringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Task10" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.polezin.spring.SpringApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.55" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.55" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/users" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -154,11 +176,14 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="Task9:war exploded" />
           <artifact name="Task10:war exploded" />
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.SpringApplication" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.55" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -176,7 +201,9 @@
       <workItem from="1663719522317" duration="70000" />
       <workItem from="1663808427268" duration="762000" />
       <workItem from="1663865182483" duration="47000" />
-      <workItem from="1663865311076" duration="2383000" />
+      <workItem from="1663865311076" duration="2849000" />
+      <workItem from="1663868194536" duration="205000" />
+      <workItem from="1663868433105" duration="1592000" />
     </task>
     <servers />
   </component>
